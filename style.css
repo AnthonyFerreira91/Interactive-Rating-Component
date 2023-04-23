@@ -99,10 +99,6 @@ section {
 	justify-content: space-between;
 }
 
-.thank {
-	display: none;
-}
-
 #btnSubmit {
 	color: var(--White);
 	font-weight: 400;
@@ -113,6 +109,10 @@ section {
 	font-size: 1.3vw;
 	letter-spacing: 0.25vw;
 	font-family: 'Overpass';
+}
+
+.thank {
+	display: none;
 }
 
 /* ATTRIBUTION */
