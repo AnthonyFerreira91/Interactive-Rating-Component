@@ -5,45 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/style.css">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
+  <section>
   <!-- Rating state start -->
+    <div class="container rate">
+      <div id="star"><img class="perfectCenter" src="./images/icon-star.svg" alt="star"></div>
 
-  How did we do?
+      <div id="text">
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+      </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <div id="notes">
+        <div class="note"><span class="perfectCenter">1</span></div>
+        <div class="note"><span class="perfectCenter">2</span></div>
+        <div class="note"><span class="perfectCenter">3</span></div>
+        <div class="note"><span class="perfectCenter">4</span></div>
+        <div class="note"><span class="perfectCenter">5</span></div>
+      </div>
 
-  1 2 3 4 5
+      <button id="btnSubmit">SUBMIT</button>
+    </div>
+    <!-- Rating state end -->
 
-  Submit
+    <!-- Thank you state start -->
+    <div class="container thank">
+      You selected <!-- Add rating here --> out of 5
 
-  <!-- Rating state end -->
+      Thank you!
 
-  <!-- Thank you state start -->
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
+    </div>
 
-  You selected <!-- Add rating here --> out of 5
+    <!-- Thank you state end -->
+  </section>
 
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
+  <footer id="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Matrixfrpro</a>.
+  </footer>
 </body>
 </html>
