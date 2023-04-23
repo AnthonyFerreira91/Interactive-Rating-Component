@@ -16,11 +16,8 @@
 	box-sizing: border-box;
 }
 
-html {
-	font-size: 15px;
-}
-
 body {
+	font-size: 15px;
 	font-family: 'Overpass', sans-serif;
 	background: #141519;
 	color: var(--White);
@@ -42,12 +39,16 @@ section {
 
 .container {
 	background: hsl(215, 25%, 14%);
-	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	width: 35%;
-	aspect-ratio: 1 / 1;
 	border-radius: 20px;
+	width: 300px;
+	max-width: 300px !important;
+	height: 300px;
+}
+
+.rate {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 #star {
@@ -58,7 +59,7 @@ section {
 .note {
 	background: var(--DarkBlue);
 	border-radius: 50%;
-	width: 4.5vw;
+	width: 38px;
 	aspect-ratio: 1 / 1;
 	display: flex;
 	justify-content: center;
@@ -69,19 +70,15 @@ section {
 	width: 35%;
 }
 
-#text {
-	width: 100%;
-}
-
 #text h1 {
-	font-size: 2.2vw;
+	font-size: 1.3em;
 	align-self: flex-start;
 	margin-bottom: 3%;
 }
 
 .container p,
 .note {
-	font-size: 1.3vw;
+	font-size: 0.8em;
 	color: var(--MediumGrey);
 }
 
@@ -106,13 +103,58 @@ section {
 	height: 12%;
 	border: 1px solid black;
 	border-radius: 30px;
-	font-size: 1.3vw;
-	letter-spacing: 0.25vw;
+	font-size: 0.8em;
+	letter-spacing: 1px;
 	font-family: 'Overpass';
 }
 
 .thank {
 	display: none;
+	align-items: center;
+	border-radius: 12px;
+	width: 55%;
+	height: 50%;
+	max-height: 55%;
+}
+
+#phone {
+	/* background-color: red; */
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: 12% 0 8% 0;
+}
+
+#phone img {
+	width: 45%;
+}
+
+#result {
+	font-size: 0.7em;
+	color: var(--Orange);
+	background: var(--DarkBlue);
+	width: 55%;
+	height: 8.5%;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#text2 {
+	text-align: center;
+	width: 80%;
+	margin: 10% 0 0;
+}
+
+ h1 {
+	font-size: 1.30em;
+	margin-bottom: 4.5%;
+	font-weight: 550;
+}
+
+#text2 p {
+	font-size: 0.85em;
 }
 
 /* ATTRIBUTION */
@@ -125,3 +167,101 @@ section {
 #attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
+/* MEDIA QUERIE */
+@media screen and (max-width: 375px) {
+	.container {
+		width: 80%;
+		max-height: 280px !important;
+	}
+	#star, .note {
+		width: 36px;
+		/* min-width: 25px; */
+		/* max-width: 40px; */
+	}
+	#text h1 {
+		font-size: 1.2em;
+	}
+	.container p, .note {
+		font-size: 0.7em;
+	}
+	#btnSubmit {
+		font-size: 0.7em;
+	}
+	#attribution {
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.container {
+		max-height: 260px !important;
+	}
+	#text h1 {
+		font-size: 1.1em;
+	}
+	#star, .note {
+		width: 32px;
+	}
+}
+
+@media screen and (max-width: 250px) {
+	.container {
+		max-height: 240px !important;
+	}
+	#star, .note {
+		width: 28px;
+	}
+	#text h1 {
+		font-size: 1em;
+	}
+	.container p, .note {
+		font-size: 0.6em;
+	}
+	#btnSubmit {
+		font-size: 0.6em;
+	}
+	#attribution {
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 220px) {
+	.container {
+		max-height: 220px !important;
+	}
+	#star, .note {
+		width: 26px;
+	}
+	#text h1 {
+		font-size: 0.9em;
+	}
+	.container p, .note {
+		font-size: 0.55em;
+	}
+	#btnSubmit {
+		font-size: 0.5em;
+	}
+}
+
+@media screen and (max-width: 200px) {
+	.container {
+		max-height: 200px !important;
+	}
+	#star, .note {
+		width: 24px;
+	}
+	#text h1 {
+		font-size: 0.8em;
+	}
+	.container p, .note {
+		font-size: 0.50em;
+	}
+	#btnSubmit {
+		font-size: 0.5em;
+	}
+	#attribution {
+		font-size: 6px;
+	}
+}
+
