@@ -42,12 +42,11 @@ section {
 	flex-direction: column;
 	border-radius: 20px;
 	width: 300px;
-	max-width: 300px !important;
-	height: 300px;
+	height: 320px;
 }
 
 .rate {
-	display: flex;
+	display: none;
 	justify-content: space-evenly;
 }
 
@@ -109,12 +108,9 @@ section {
 }
 
 .thank {
-	display: none;
+	display: flex;
 	align-items: center;
-	border-radius: 12px;
-	width: 55%;
-	height: 50%;
-	max-height: 55%;
+	justify-content: center;
 }
 
 #phone {
@@ -122,15 +118,16 @@ section {
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	margin: 12% 0 8% 0;
+	margin: -1.5% 0 6% 0;
 }
 
 #phone img {
 	width: 45%;
+	height: 95%;
 }
 
 #result {
-	font-size: 0.7em;
+	font-size: 0.8em;
 	color: var(--Orange);
 	background: var(--DarkBlue);
 	width: 55%;
@@ -143,18 +140,19 @@ section {
 
 #text2 {
 	text-align: center;
-	width: 80%;
-	margin: 10% 0 0;
+	width: 89.36%;
+	margin: 9% 0 0;
 }
 
- h1 {
-	font-size: 1.30em;
-	margin-bottom: 4.5%;
+#text2 h1 {
+	font-size: 1.4em;
+	font-weight: 400;
+	margin-bottom: 4%;
 	font-weight: 550;
 }
 
 #text2 p {
-	font-size: 0.85em;
+	font-size: 0.8em;
 }
 
 /* ATTRIBUTION */
@@ -173,11 +171,10 @@ section {
 	.container {
 		width: 80%;
 		max-height: 280px !important;
+		border-radius: 12px;
 	}
 	#star, .note {
 		width: 36px;
-		/* min-width: 25px; */
-		/* max-width: 40px; */
 	}
 	#text h1 {
 		font-size: 1.2em;
@@ -261,7 +258,7 @@ section {
 		font-size: 0.5em;
 	}
 	#attribution {
-		font-size: 6px;
+		font-size: 7px;
 	}
 }
 
