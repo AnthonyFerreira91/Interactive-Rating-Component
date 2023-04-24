@@ -101,6 +101,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	user-select: none;
 }
 
 .active {
@@ -204,10 +205,7 @@ section {
 	#text h1 {
 		font-size: 1.2em;
 	}
-	.container p, .note {
-		font-size: 0.7em;
-	}
-	#btnSubmit {
+	.container p, .note, #btnSubmit {
 		font-size: 0.7em;
 	}
 	#attribution {
@@ -225,6 +223,9 @@ section {
 	#star, .note {
 		width: 32px;
 	}
+	#result {
+		font-size: 0.7em;
+	}
 }
 
 @media screen and (max-width: 250px) {
@@ -237,11 +238,11 @@ section {
 	#text h1 {
 		font-size: 1em;
 	}
-	.container p, .note {
+	.container p, .note, #btnSubmit, #result {
 		font-size: 0.6em;
 	}
-	#btnSubmit {
-		font-size: 0.6em;
+	#text2 p {
+		font-size: 0.7em;
 	}
 	#attribution {
 		font-size: 8px;
@@ -261,7 +262,7 @@ section {
 	.container p, .note {
 		font-size: 0.55em;
 	}
-	#btnSubmit {
+	#btnSubmit,	#result {
 		font-size: 0.5em;
 	}
 }
@@ -276,10 +277,7 @@ section {
 	#text h1 {
 		font-size: 0.8em;
 	}
-	.container p, .note {
-		font-size: 0.50em;
-	}
-	#btnSubmit {
+	.container p, .note, #btnSubmit {
 		font-size: 0.5em;
 	}
 	#attribution {

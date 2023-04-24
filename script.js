@@ -8,9 +8,7 @@ let count = 0;
 clickActive.forEach(el => {
 	el.addEventListener('click', (e) => {
 		const activeClass = document.querySelector('.active');
-		if(activeClass !== null){
-			activeClass.classList.remove('active');
-		}
+		activeClass !== null &&	activeClass.classList.remove('active');
 		e.target.classList.add('active');
 	})
 });
