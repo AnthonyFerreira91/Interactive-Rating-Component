@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-html-css-flexbox-js-OJuzsgmvX8](https://www.frontendmentor.io/solutions/interactive-rating-component-html-css-flexbox-js-OJuzsgmvX8)
 - Live Site URL: [https://interactive-rating-component-7radi1292-matrixfrpro33.vercel.app/](https://interactive-rating-component-7radi1292-matrixfrpro33.vercel.app/)
 
 ### Built with
